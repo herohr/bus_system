@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>鸡掰</title>
+</head>
+<body>
+<div class="container">
+  <form class="form-horizontal" method="post" action="/commit" >
+    <fieldset>
+      <div id="legend" class="">
+        <legend class="">问卷</legend>
+      </div>
+    <div class="control-group">
+          <label class="control-label">1. 您是否认为我校需要开展校园公共交通？</label>
+          <div class="controls">
+      <!-- Multiple Checkboxes -->
+      <label class="radio">
+        <input type="radio" value="是" name="q1">
+        是
+      </label>
+      <label class="radio">
+        <input type="radio" value="否" name="q1">
+        否
+      </label>
+  </div>
+
+        </div>
+
+
+
+    <div class="control-group">
+          <label class="control-label">2. 您认为我校开展公共交通的话，理想的交通工具是什么？</label>
+          <div class="controls">
+      <!-- Multiple Checkboxes -->
+      <label class="radio">
+        <input type="radio" value="小型公交" name="q2">
+        小型公交
+      </label>
+      <label class="radio">
+        <input type="radio" value="观光电瓶车" name="q2">
+        观光电瓶车
+      </label>
+      <label class="radio">
+        <input type="radio" value="轨道交通" name="q2">
+        轨道交通
+      </label>
+  </div>
+
+        </div>
+
+    <div class="control-group">
+          <label class="control-label">3.您现在处于何处？</label>
+          <div class="controls">
+      <!-- Multiple Radios -->
+      <label class="radio">
+        <input type="radio" value="丁香宿舍" name="g1" checked="checked">
+        丁香宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="竹园宿舍" name="g1">
+        竹园宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="海棠宿舍" name="g1">
+        海棠宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="丁香食堂" name="g1">
+        丁香食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="竹园食堂" name="g1">
+        竹园食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="海棠食堂" name="g1">
+        海棠食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="A教学楼" name="g1">
+        A教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="B教学楼" name="g1">
+        B教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="C教学楼" name="g1">
+        C教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="D教学楼" name="g1">
+        D教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="E教学楼" name="g1">
+        E教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="F教学楼" name="g1">
+        F教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="G教学楼" name="g1">
+        G教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="信远楼" name="g1">
+        信远楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="工训中心" name="g1">
+        工训中心
+      </label>
+      <label class="radio">
+        <input type="radio" value="新综" name="g1">
+        新综
+      </label>
+      <label class="radio">
+        <input type="radio" value="老综" name="g1">
+        老综
+      </label>
+      <label class="radio">
+        <input type="radio" value="行政楼" name="g1">
+        行政楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="家属区" name="g1">
+        家属区
+      </label>
+      <label class="radio">
+        <input type="radio" value="北操场" name="g1">
+        北操场
+      </label>
+      <label class="radio">
+        <input type="radio" value="南操场" name="g1">
+        南操场
+      </label>
+      <label class="radio">
+        <input type="radio" value="大学生活动中心" name="g1">
+        大学生活动中心
+      </label>
+  </div>
+
+        </div>
+
+
+
+    <div class="control-group">
+          <label class="control-label">4.您现在想前往那里？</label>
+          <div class="controls">
+      <!-- Multiple Radios -->
+      <label class="radio">
+        <input type="radio" value="丁香宿舍" name="g2" checked="checked">
+        丁香宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="竹园宿舍" name="g2">
+        竹园宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="海棠宿舍" name="g2">
+        海棠宿舍
+      </label>
+      <label class="radio">
+        <input type="radio" value="丁香食堂" name="g2">
+        丁香食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="竹园食堂" name="g2">
+        竹园食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="海棠食堂" name="g2">
+        海棠食堂
+      </label>
+      <label class="radio">
+        <input type="radio" value="A教学楼" name="g2">
+        A教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="B教学楼" name="g2">
+        B教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="C教学楼" name="g2">
+        C教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="D教学楼" name="g2">
+        D教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="E教学楼" name="g2">
+        E教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="F教学楼" name="g2">
+        F教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="G教学楼" name="g2">
+        G教学楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="信远楼" name="g2">
+        信远楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="工训中心" name="g2">
+        工训中心
+      </label>
+      <label class="radio">
+        <input type="radio" value="新综" name="g2">
+        新综
+      </label>
+      <label class="radio">
+        <input type="radio" value="老综" name="g2">
+        老综
+      </label>
+      <label class="radio">
+        <input type="radio" value="行政楼" name="g2">
+        行政楼
+      </label>
+      <label class="radio">
+        <input type="radio" value="家属区" name="g2">
+        家属区
+      </label>
+      <label class="radio">
+        <input type="radio" value="北操场" name="g2">
+        北操场
+      </label>
+      <label class="radio">
+        <input type="radio" value="南操场" name="g2">
+        南操场
+      </label>
+      <label class="radio">
+        <input type="radio" value="大学生活动中心" name="g2">
+        大学生活动中心
+      </label>
+  </div>
+
+        </div>
+
+    <div class="control-group">
+          <label class="control-label">5. 您最希望开通的路线是？</label>
+          <div class="controls">
+      <!-- Multiple Checkboxes -->
+      <label class="checkbox">
+        <input type="checkbox" value="丁香宿舍" name="g3">
+        丁香宿舍
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="竹园宿舍" name="g3">
+        竹园宿舍
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="海棠宿舍" name="g3">
+        海棠宿舍
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="丁香食堂" name="g3">
+        丁香食堂
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="竹园食堂" name="g3">
+        竹园食堂
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="海棠食堂" name="g3">
+        海棠食堂
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="A教学楼" name="g3">
+        A教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="B教学楼" name="g3">
+        B教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="C教学楼" name="g3">
+        C教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="D教学楼" name="g3">
+        D教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="E教学楼" name="g3">
+        E教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="F教学楼" name="g3">
+        F教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="G教学楼" name="g3">
+        G教学楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="信远楼" name="g3">
+        信远楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="工训中心" name="g3">
+        工训中心
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="新综" name="g3">
+        新综
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="老综" name="g3">
+        老综
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="行政楼" name="g3">
+        行政楼
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="家属区" name="g3">
+        家属区
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="北操场" name="g3">
+        北操场
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="南操场" name="g3">
+        南操场
+      </label>
+      <label class="checkbox">
+        <input type="checkbox" value="大学生活动中心" name="g3">
+        大学生活动中心
+      </label>
+  </div>
+
+        </div><div class="control-group">
+          <label class="control-label">6. 您认为校园公交的等待时间最大是多少？</label>
+          <div class="controls">
+      <!-- Multiple Checkboxes -->
+      <label class="radio">
+        <input type="checkbox" value="3分钟" name="q3">
+        3分钟
+      </label>
+      <label class="radio">
+        <input type="checkbox" value="5分钟" name="q3">
+        5分钟
+      </label>
+      <label class="radio">
+        <input type="checkbox" value="10分钟" name="q3">
+        10分钟
+      </label>
+  </div>
+
+        </div>
+
+    </fieldset>
+      <input type="submit" value="提交">
+  </form>
+</div>
+</body>
+</html>
