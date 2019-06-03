@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS "app_wj" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "q1" bool NOT NULL, "q2" varchar(8) NOT NULL, "q3" varchar(32) NOT NULL, "q4" varchar(32) NOT NULL, "q5" text NOT NULL);

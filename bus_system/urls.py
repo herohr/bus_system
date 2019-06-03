@@ -19,5 +19,9 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", ShowView.as_view())
+    path("show/", ShowView.as_view()),
+    path("", IndexView.as_view()),
+    path("wj/", WJView.as_view()),
+    path("heatmapData/", HeatMapJsView.as_view()),
+    path("heatmap/", HeatMapView.as_view()),
 ]

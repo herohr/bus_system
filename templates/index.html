@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <title>校园公交管理系统</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="text text-primary">校园公交车管理系统</h1>
+        </div>
+
+        <div class="row">
+            <div class="btn-group" role="group" aria-label="...">
+              <button id="b1" type="button" class="btn btn-default">1号环线</button>
+              <button id="b2" type="button" class="btn btn-default">2号北线</button>
+              <button id="b3" type="button" class="btn btn-default">3号南线</button>
+              <button id="b4" type="button" class="btn btn-default">4号西线</button>
+              <button id="b5" type="button" class="btn btn-default">5号东线</button>
+              <button id="bHeatmap" type="button" class="btn btn-default">热力图</button>
+            </div>
+        </div>
+        <div class="row">
+            <iframe id="C" src="/show/" height="768px" width="1024px">
+            </iframe>
+            <iframe id="N" src="/show/?path=N" height="768px" width="1024px">
+            </iframe>
+            <iframe id="S" src="/show/?path=S" height="768px" width="1024px">
+            </iframe>
+            <iframe id="E" src="/show/?path=W" height="768px" width="1024px">
+            </iframe>
+            <iframe id="W" src="/show/?path=E" height="768px" width="1024px">
+            </iframe>
+            <iframe id="Heatmap" src="/heatmap/" height="768px" width="1024px">
+            </iframe>
+
+        </div>
+    </div>
+
+<script>
+    function showAndHide(num) {
+        var ids = ["C", "N", "S", "E", "W", "Heatmap"];
+        for(var i=0;i<ids.length;i++){
+            if(i === num){
+                $("#"+ids[i]).show();
+            }else{
+                $("#"+ids[i]).hide();
+            }
+        }
+    }
+    $("#b1").click(function () {
+        showAndHide(0)
+    });
+    $("#b2").click(function () {
+        showAndHide(1)
+    });
+    $("#b3").click(function () {
+        showAndHide(2)
+    });
+    $("#b4").click(function () {
+        showAndHide(3)
+    });
+    $("#b5").click(function () {
+        showAndHide(4)
+    });
+    $("#bHeatmap").click(function () {
+        showAndHide(5)
+    });
+
+    showAndHide(0);
+</script>
+</body>
+</html>
